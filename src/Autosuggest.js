@@ -265,6 +265,7 @@ export default class Autosuggest extends Component {
       event.target;
 
     while (node !== null && node !== document && node !== undefined) {
+      console.log(node);
       if (node.getAttribute('data-suggestion-index') !== null) {
         // Suggestion was clicked
         return;
